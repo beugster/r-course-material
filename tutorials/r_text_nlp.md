@@ -95,7 +95,7 @@ Before we go on, let's get a more realistic example: a German wikinews article a
 ``` r
 url = "https://gist.githubusercontent.com/vanatteveldt/bf9527ac6510e9b3e5c6b198b917ddd1/raw/45e6f6bfa0abba219935543eb70cca9f675703c7/VW_erneut_unter_Verdacht.txt"
 library(readtext)
-d = readtext(url)
+d = readtext(url, encoding = "utf-8")
 d$text
 ```
 
